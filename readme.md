@@ -25,14 +25,14 @@ The `Dict` class is responsible for counting the occurrences of words in a given
 - **`~Dict()`:** Destroy the Dict instance.
 
 ### Data Structure used:
-- **AVL Tree + Hash Maps:** : The primary data structure is a `hash table`, ensuring quick access to word counts. To mitigate potential collisions, a chaining mechanism is integrated, where each node in the hash table hosts an AVL (Adelson-Velsky and Landis) tree.<br>
-- This innovative approach leverages the speed of hash table lookups while significantly reducing collision-related concerns through the use of AVL trees, resulting in a robust and efficient word counting mechanism.
+- **AVL Tree + Hash Maps:**: The primary data structure is a `hash table`, ensuring quick access to word counts. A chaining mechanism is integrated to mitigate potential collisions, where each node in the hash table hosts an AVL (Adelson-Velsky and Landis) tree.<br>
+- This innovative approach leverages the speed of hash table lookups while significantly reducing collision-related concerns through the use of AVL trees, resulting in a robust and efficient word-counting mechanism.
 
 ## Search Engine Implementation
 
 ### SearchEngine Class
 
-The `SearchEngine` class leverages the Boyer-Moore algorithm, a powerful string searching technique, to efficiently locate patterns within the document. This advanced algorithm enhances the speed of the search process, making it well-suited for practical applications.
+The `SearchEngine` class leverages the Boyer-Moore algorithm, a powerful string-searching technique, to locate patterns within the document efficiently. This advanced algorithm enhances the speed of the search process, making it well-suited for practical applications.
 
 #### Key Features:
 
@@ -46,29 +46,28 @@ The `SearchEngine` class leverages the Boyer-Moore algorithm, a powerful string 
 
 By incorporating the Boyer-Moore algorithm, renowned for its efficiency in string searching, the `SearchEngine` class delivers a high-performance solution for locating patterns within the document. This choice of algorithm significantly enhances the search speed, making it a robust and effective tool for pattern retrieval.
 
-## Reqiurnments:
+## Requirements:
 1. g++ or any c++ compiler.
-2. Using Linux is recommanded.
+2. Using Linux is recommended.
 
 ## How to Use
 
-1. Clone the repository: `git clone https://github.com/yourusername/search-engine.git`
-2. type `make task=<Task No.>` for compile specific task file {Task no.= 1 for Dictionary, 2 for Search Engine.}
+1. Clone the repository: `git clone https://github.com/AnkitChoudhaary/Search-Engine-and-Dictionary-Implementation.git`
+2. command `make task=<Task No.>` for compile specific task file {Task no.= 1 for Dictionary, 2 for Search Engine.}
 3. now run `make run task=<Task No.>` for executing the file.
-P.S : Before make sure you initialize all the txt files paths & search texts in corresponding main file.
+P.S: Before, ensure you initialize all the txt file paths & search texts in the corresponding main file.
 
 ## File Structure
 search-engine/
-│
-├── dict.h
-├── dict.cpp
-├── search.h
-├── search.cpp
-├── node.h
-├── node.cpp
-├── main_dict.cpp
-├── main_src.cpp
-└── README.md
+- dict.h
+- dict.cpp
+- search.h
+- search.cpp
+- node.h
+- node.cpp
+- main_dict.cpp
+- main_src.cpp
+- README.md
 
 ## Testing
 I have provided a sample Input `.txt` file in the txtfiles. You can also generate similar text files and use the tool.
